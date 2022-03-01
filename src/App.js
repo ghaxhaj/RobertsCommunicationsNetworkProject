@@ -24,3 +24,5 @@ function App() {
 }
 
 export default App;
+
+//Testing to check that pushing changes to the master branch works correctly
