@@ -6,10 +6,10 @@ class Navbar extends React.Component{
         return(
             <div className = 'navbar'>
                 <div>
-                    <NavLink to='/'>Landing Page </NavLink>
+                    <NavLink className = "navLink" to='/'>Landing Page </NavLink>
                 </div>
                 <div>
-                    <NavLink to='/dashboard'>Dashboard Page </NavLink>
+                    <NavLink className = "navLink"to='/dashboard'>Dashboard Page </NavLink>
                 </div>
             </div>
         )

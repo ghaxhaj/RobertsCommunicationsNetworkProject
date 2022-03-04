@@ -12,6 +12,7 @@ class App extends React.Component {
 state = {
   user: null
 }
+//this.state.user holds the data of the user being viewed with the UserProfile component
 
 
 setUserProps = (props) => {
@@ -19,6 +20,8 @@ setUserProps = (props) => {
     user: props
   })
 }
+
+//This is a callback function passed to the DashboardPage component that waits for the user to click on a profile to view before updating
 
 
 render(){
@@ -41,4 +44,6 @@ render(){
 
 export default App;
 
-//Testing to check that pushing changes to the master branch works correctly
+//I ran a simple Router -> Switch -> Route to get my paths to hit the correct components.
+//I passed the value of user to DashboardPage for the "Recently Viewed User" button
+//I Passed the value of user to UserProfile so it knows which user to populate the HTML values with
