@@ -18,7 +18,6 @@ export default class UserCard extends React.Component{
     }
 
 
-
     render(){
         return(
             <>

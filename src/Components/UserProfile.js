@@ -85,8 +85,9 @@ class UserProfile extends React.Component{
 
 
         return(
-            <div>
-            <h3>{this.props[0].name.first} {this.props[0].name.last}</h3>
+            <div className = "userProfileDiv">
+            {/* <h3>{this.props[0].name.first} {this.props[0].name.last}</h3> */}
+            {this.props[0].gender == "female" ? <h3 className="femaleH3">{this.props[0].name.first} {this.props[0].name.last}</h3> : <h3 className="maleH3">{this.props[0].name.first} {this.props[0].name.last}</h3>}
             <p>Gender: {this.props[0].gender}</p>
             <p>Cell: {this.props[0].cell}</p>
             <p>Home: {this.props[0].phone}</p>
@@ -97,7 +98,7 @@ class UserProfile extends React.Component{
             <p>Days Until Birthday: {daysRemaining} days remaining</p>
             <p>Username: {this.props[0].login.username}</p>
             <p>Nationality: {this.props[0].nat}</p>
-            <img src={this.props[0].picture.large}/>
+            <img className = "profileImg"src={this.props[0].picture.large}/>
             <br/>
             <Link to='/dashboard'>Click To Go Back To Dashboard</Link>
         </div>

@@ -40,7 +40,7 @@ renderUsers = () => {
             return 0
             //Sorts users by last name 
         }).map(user => {
-            return (<div><UserCard {...user} /><Link to={`/user/${user.login.username}`}><button className = "clickForProfileButton" value ={user.login.username}onClick={this.handleProfilePage}>Click For Profile!</button></Link></div>)
+            return ( <div className = "userCardWrapper"><UserCard {...user} /><Link to={`/user/${user.login.username}`}><button className = "clickForProfileButton" value ={user.login.username}onClick={this.handleProfilePage}>Click For Profile!</button></Link></div>)
             //returns a UserCard for each user along with a Click for Profile button that helps call on the callBack function we passed down to DashboardPage. 
         })
     }
